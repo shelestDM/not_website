@@ -1,0 +1,12 @@
+@mixin styling_text($fw,$fz,$lh,$clr){
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $clr;
+}
+$test: white;
+
+.box{
+    color: $test;
+    // @include styling_text(600, 28px, 39.2px, white);
+}
