@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NFT Market</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <section id="hero">
            <div class="info">
-                <h1>Discover digital art & Collect NFTs</h1>
+                <h1>Discover  <br class="bp2"> Digital <br class="line"> Art <br class="bp2"> & Collect <br class="line"> NFTs</h1>
                 <p>
                     NFT marketplace UI created with Anima for Figma. 
                     Collect, buy and sell art from more than 20k NFT artists.
                 </p>
                 <div class="card">
-                    <img  src="./images/hero_card_img.png" alt="card_img">
+                    <img  src="./images/hero_card_image.mobile.png" alt="card_img">
                     <h2>Space Walking</h2>
                     <div>
                         <img src="./images/author_avatar.svg" 
@@ -44,6 +44,32 @@
                         <p>Artists</p>
                     </div>
                 </div>
+           </div>
+           <div class="card">
+            <picture>
+                <source
+                    media="(min-width: 768px)"
+                    srcSet="./images/hero_card_image_md.png"
+                />
+                <source
+                    media="(min-width: 1280px)"
+                    srcSet="./images/hero_card_image_pc.png"
+                />
+                <img
+                    loading="lazy"
+                    src="./images/hero_card_image_pc.png"
+                    alt="Cat"
+                />
+            </picture>
+            <!-- <img alt="card_img" srcset="./images/hero_card_image_md.png 768w" srcset="./images/hero_card_image_pc.png 1280w" > -->
+            <h2>Space Walking</h2>
+            <div>
+                <img src="./images/author_avatar.svg" 
+                width="24"
+                height="24" 
+                alt="author_avatar">
+                <p>Animakid</p>
+            </div>
            </div>
         </section>
     </main>

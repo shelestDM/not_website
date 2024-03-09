@@ -25,8 +25,9 @@ section{
 }
 
 #hero{
-    margin-top: 40px;
+    margin-top: 80px;
     .card{
+        display: none;
         width: 315px;
         margin: auto;
         border-radius: 20px; 
@@ -34,7 +35,6 @@ section{
         >img{
             height: 206px;
             width: 100%;
-            border-radius: 20px 20px 0px 0px; 
         }
         >h2{
             .styling_text(600, 22px, 30.8px);
@@ -54,9 +54,18 @@ section{
         }
     }
     .info{
+        >.card{
+            display: block;
+        }
         >h1{
           .styling_text(600, 28px, 39.2px);
           margin-bottom: 10px;
+          >.line{
+            display: none;
+          }
+          >.bp2{
+            display: none;
+          }
         }
         >p{
             .styling_text(400,16px,22.4px);
@@ -98,4 +107,140 @@ section{
             }
         }
     }
+}
+
+@media (min-width:768px) {
+    section{
+        width: 690px;
+    }
+    #hero{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 80px;
+        .card{
+            display: block;
+            width: 330px;
+            margin: 0;
+            >img{
+                width: 330px;
+                height: 221px;
+            }
+        }
+        .info{
+            width: 330px;
+            >.card{
+                display: none;
+            }
+            >h1{
+              .styling_text(600, 38px, 45.6px);
+              margin-bottom: 20px;
+              >.line{
+                display: inline;
+              }
+            }
+            >p{
+                .styling_text(400,16px,22.4px);
+                margin-bottom: 20px;
+            }
+            >button{
+                margin: 0px;
+                width: 224px;
+                height: 60px;
+            }
+            >.stat{
+                display: flex;
+                gap: 30px;
+                margin:20px 0px 0px;
+            }
+        }
+    } 
+}
+
+@media (min-width:1280px) {
+    section{
+        width: 1050px;
+    }
+    #hero{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+
+        .card{
+            display: block;
+            width: 510px;
+            margin: 0px;
+            height: 510px;
+            >picture{
+                >source{
+                    height: 401px;
+                    width: 510px;
+                }
+                >img{
+                    height: 401px;
+                    width: 510px;
+                }
+            }
+            
+            >h2{
+                .styling_text(600, 22px, 30.8px);
+                margin: 22px 20px 0px;
+            }
+            >div{
+                padding: 10px 20px 22px;
+                display: flex;
+                gap: 12px;
+                >img{
+                    width: 24px;
+                    height: 24px;
+                }
+                >p{
+                    .styling_text(400, 16px, 22.4px); 
+                }
+            }
+        }
+        .info{
+            width: 510px;
+            >.card{
+                display: none;
+            }
+            >h1{
+              .styling_text(600, 67px, 73.7px);
+              margin-bottom: 20px;
+              >.line{
+                display: none;
+              }
+              >.bp2{
+                display: inline;
+              }
+            }
+            >p{
+                .styling_text(400,22px,35.2px);
+                margin-bottom: 30px;
+            }
+            >button{
+                margin: 0px;
+                width: 224px;
+                height: 60px;
+            }
+            >.stat{
+                display: flex;
+                gap: 30px;
+                width: 100%;
+                margin:30px 0px 0px;
+                >.item{
+                    width: 150px;
+                    >p:first-of-type{
+                        .styling_text(700, 28px, 39.2px);
+                    }
+                    p{
+                        .styling_text(400, 23.99px, 38.38px);
+                    }
+                }
+            }
+        }
+    } 
 }
