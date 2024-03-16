@@ -5,6 +5,20 @@
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.author_info_wrapper {
+  display: flex;
+  gap: 12px;
+}
+.author_info_wrapper > img {
+  width: 24px;
+  height: 24px;
+}
+.author_info_wrapper > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: white;
+}
 body {
   background: #2b2b2b;
 }
@@ -111,18 +125,6 @@ section {
 }
 #hero .card > div {
   padding: 10px 20px 22px;
-  display: flex;
-  gap: 12px;
-}
-#hero .card > div > img {
-  width: 24px;
-  height: 24px;
-}
-#hero .card > div > p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22.4px;
-  color: white;
 }
 #hero .info > .card {
   display: block;
@@ -191,6 +193,75 @@ section {
   line-height: 22.4px;
   color: white;
 }
+#collection {
+  width: 100%;
+  padding: 40px 30px;
+}
+#collection > .collection_info {
+  width: 315px;
+  margin: auto;
+}
+#collection > .collection_info > h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39.2px;
+  color: white;
+  margin-bottom: 10px;
+}
+#collection > .collection_info > p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: white;
+}
+#collection > .collection_info .collections_wrapper {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+#collection > .collection_info .collections_wrapper > .second_collection,
+#collection > .collection_info .collections_wrapper > .third_collection {
+  display: none;
+}
+#collection > .collection_info .collections_wrapper > .images_collections > img {
+  width: 315px;
+  height: 315px;
+  border-radius: 20px;
+}
+#collection > .collection_info .collections_wrapper > .images_collections > img:hover {
+  transform: scale(0.9);
+}
+#collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail {
+  margin-block: 15px;
+  display: flex;
+  gap: 15px;
+}
+#collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail > img,
+#collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail > div {
+  width: 95px;
+  height: 95px;
+  border-radius: 20px;
+}
+#collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail > img:hover,
+#collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail > div:hover {
+  transform: scale(0.9);
+}
+#collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail > div {
+  background-color: #a259ff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: white;
+}
+#collection > .collection_info .collections_wrapper > .images_collections > h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30.8px;
+  color: white;
+  margin-bottom: 10px;
+}
 @media (min-width: 768px) {
   section {
     width: 690px;
@@ -243,6 +314,39 @@ section {
     display: flex;
     gap: 30px;
     margin: 20px 0px 0px;
+  }
+  #collection {
+    width: 690px;
+    padding: 40px 0px;
+    margin: auto;
+  }
+  #collection > .collection_info {
+    width: 100%;
+    margin: 0;
+  }
+  #collection > .collection_info .collections_wrapper > .second_collection {
+    display: none;
+  }
+  #collection > .collection_info .collections_wrapper > .third_collection {
+    display: block;
+  }
+  #collection > .collection_info .collections_wrapper > .images_collections {
+    width: 100%;
+  }
+  #collection > .collection_info .collections_wrapper > .images_collections > img {
+    width: 330px;
+    height: 330px;
+  }
+  #collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail > img,
+  #collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail > div {
+    width: 100px;
+    height: 100px;
+  }
+  #collection > .collection_info .collections_wrapper > .images_collections > .images_thumbnail > div {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35.2px;
+    color: white;
   }
 }
 @media (min-width: 1280px) {
@@ -343,5 +447,16 @@ section {
     font-size: 23.99px;
     line-height: 38.38px;
     color: white;
+  }
+  #collection {
+    width: 1050px;
+    padding: 80px 0px;
+  }
+  #collection > .collection_info .collections_wrapper {
+    margin-top: 60px;
+  }
+  #collection > .collection_info .collections_wrapper > .second_collection,
+  #collection > .collection_info .collections_wrapper > .third_collection {
+    display: block;
   }
 }

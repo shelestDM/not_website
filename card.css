@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    /* не дозволяємо розширяти теги такими стилями як padding / border */
+  }
+  .card {
+    width: 330px;
+    height: 469px;
+    border-radius: 20px;
+    background-color: #3B3B3B;
+  }
+  .card > img {
+    width: 330px;
+    height: 296px;
+  }
+  .card_info {
+    padding: 20px 30px 25px;
+  }
+  .card_info > h1 {
+    /* в середині card_info стилі задаємо до h1*/
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30.8px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  .author_info {
+    display: flex;
+    gap: 12px;
+  }
+  .author_info > img {
+    border-radius: 50%;
+  }
+  .author_info > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: white;
+  }
+  .price_and_bid {
+    margin-top: 25px;
+    display: flex;
+  }
+  .price,
+  .bid {
+    width: 50%;
+  }
+  .price > span,
+  .bid > span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13.2px;
+    color: #858584;
+  }
+  .price > p,
+  .bid > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: white;
+    margin-top: 8px;
+  }
+  .bid {
+    text-align: right;
+  }
+  .card_wrapper {
+    width: 330px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;/* не дозволяємо розширяти теги такими стилями як padding / border */
+  }
+  .card{
+    width: 330px;
+    height: 469px;
+    border-radius: 20px;
+    background-color: #3B3B3B;
+  }
+  .card>img{
+    width: 330px;
+    height: 296px;
+  }
+  .card_info{
+    padding: 20px 30px 25px;
+  }
+  .card_info>h1{/* в середині card_info стилі задаємо до h1*/
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30.8px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  .author_info{
+    display: flex;
+    gap: 12px;
+  }
+  .author_info>img{
+    border-radius: 50%;
+  }
+  .author_info>p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: white;
+  }
+  .price_and_bid{
+    margin-top: 25px;
+    display: flex;
+  }
+  .price, .bid{
+    width: 50%;
+  }
+  .price>span , .bid>span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13.2px;
+    color: #858584;
+  }
+  .price>p , .bid>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: white;
+    margin-top: 8px;
+  }
+  .bid{
+    text-align: right;
+  }
+  .card_wrapper{
+    width: 330px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  <div class="card">
+  <img src="./card_image.pdf" alt="image">
+  <div class="card_info">
+      <h1>Distant Galaxy</h1>
+
+      <div class="author_info">
+          <img src="./avatar.jpg" width="24" height="24" alt="avatar">
+          <p>MoonDancer</p>
+      </div>
+
+      <div class="price_and_bid">
+          <div class="price">
+              <span>Price</span>
+              <p>1.63 ETH</p>
+          </div>
+          <div class="bid">
+              <span>Highest Bid</span>
+              <p>0.33 wETH</p>
+          </div>
+      </div>
+      
+  </div>
+</div>
